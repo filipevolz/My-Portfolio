@@ -1,0 +1,77 @@
+.projects {
+    padding: 25rem 0;
+}
+
+.projects .list-items {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10rem;
+    grid-template-columns: repeat(2, 400px);
+}
+
+.projects .list-items .list-item-repo>* {
+    margin-bottom: 1rem;
+}
+
+.projects .list-items .list-item-repo p a {
+    color: #455;
+}
+
+.projects .list-items .list-item-repo p a:hover {
+    color: #147efb;
+    transition: all 0.3s;
+}
+
+.projects .list-items .list-item-repo h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.projects .list-items .list-item-repo p {
+    font-size: 1.5rem;
+}
+
+.projects .list-items .list-item-repo ul {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.projects span {
+    font-weight: bold;
+}
+
+@media (max-width: 900px){
+    .projects{
+        padding: 5rem;
+    }
+
+    .projects .list-items {
+        grid-template-columns: repeat(2, 300px);
+        gap: 5rem;
+    }
+
+    .projects .list-items .list-item-repo h2 {
+        font-size: 2rem;
+    }
+
+    .projects .list-items .list-item-repo p,
+    .projects .list-items .list-item-repo ul {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 670px){
+    .projects {
+        padding: 1rem;
+    }
+
+    .projects .list-items {
+        text-align: center;
+        grid-template-columns: 300px;
+    }
+}
